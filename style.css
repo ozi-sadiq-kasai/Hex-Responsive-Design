@@ -1,0 +1,75 @@
+.container{
+  width: 95%;
+  height: 90vh;
+  /* text-align: center; */
+  border: 5px solid red;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* .hex-colors{
+  padding: 20px; 
+  border: 1px solid black;
+  margin: 50px auto;
+  
+} */
+
+#title{
+  font-size: 2em;
+  padding:3px;
+  animation: colorchange 3s infinite alternate;
+}
+
+p {
+  font-size: 25px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 2;
+}
+
+@keyframes colorchange{
+  0%{
+    color: red;
+  }
+  25%{
+    color: green;
+  }
+  50%{
+    color: blue;
+  }
+  75%{
+    color: yellow;
+  }
+ 100%{
+    color: purple;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  } 
+}
+@media(max-width: 420px) {
+  #title{
+    font-size: 0.8em;
+    padding: 2px;
+  }
+}
+
+
+
